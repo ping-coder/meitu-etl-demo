@@ -10,7 +10,7 @@ gcloud run jobs update job-quickstart \
     --set-cloudsql-instances=peace-demo:us-central1:meitu-demo-2307 \
     --set-env-vars=INSTANCE_CONNECTION_NAME=peace-demo:us-central1:meitu-demo-2307 \
     --set-env-vars=DB_USER=db \
-    --set-env-vars=DB_PASS=ping@#\$1234 \
+    --set-env-vars=DB_PASS=password \
     --set-env-vars=DB_NAME=meitu_db
 
 gcloud sql instances patch meitu-demo-2307 --enable-bin-log
